@@ -1,0 +1,18 @@
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Debug logs
+*.log
+
+# macOS
+.DS_Store
