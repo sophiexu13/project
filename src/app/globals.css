@@ -181,10 +181,35 @@ main { flex: 1; }
 .page-head { margin-bottom: 32px; }
 .page-head h1 { font-size: clamp(1.9rem, 4vw, 2.5rem); letter-spacing: -0.03em; margin-bottom: 8px; }
 .page-head p { margin: 0; color: var(--muted); font-size: 1.05rem; max-width: 56ch; }
+.about-page { max-width: 1080px; }
+.about-page > .page-head { max-width: 680px; margin: 0 auto clamp(48px, 7vw, 76px); text-align: center; }
+.about-page > .page-head h1 { font-size: clamp(2.4rem, 5vw, 3.5rem); }
+.about-page > .page-head p { margin-inline: auto; font-size: clamp(1.05rem, 1.7vw, 1.2rem); line-height: 1.65; }
+.about-founder-head { margin-bottom: 24px; }
+.about-founder-head .eyebrow { margin-bottom: 10px; }
+.about-founder-head h2 { margin: 0 0 5px; font-size: clamp(2rem, 4vw, 2.8rem); }
+.about-location { margin: 0; color: var(--primary); font-size: 0.94rem; font-weight: 700; letter-spacing: 0.04em; }
+.about-founder-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr); gap: clamp(36px, 7vw, 76px); align-items: center; }
+.about-bio { max-width: 62ch; color: var(--muted); font-size: 1rem; line-height: 1.8; }
+.about-bio p { margin: 0 0 18px; }
+.about-bio p:last-child { margin-bottom: 0; }
+.about-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: clamp(10px, 2vw, 18px); padding: 8px 2px 20px; }
+.about-photo { position: relative; margin: 0; padding: 9px 9px 10px; background: var(--card); border: 1px solid var(--border); box-shadow: 0 8px 24px rgba(48, 42, 40, 0.09); }
+.about-photo::before { position: absolute; z-index: 1; top: -8px; left: 50%; width: 58px; height: 18px; content: ""; background: rgba(240, 214, 189, 0.82); translate: -50% 0; rotate: -2deg; }
+.about-photo-one { rotate: -3deg; }
+.about-photo-two { translate: 0 25px; rotate: 2.5deg; }
+.about-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; }
 .panel { padding: 32px; }
 .panel + .panel { margin-top: 16px; }
 .panel h2 { font-size: 1.25rem; }
 @media (max-width: 640px) { .page { padding-top: 40px; } .panel { padding: 20px; } }
+@media (max-width: 760px) {
+  .about-page { padding-top: 42px; }
+  .about-page > .page-head { margin-bottom: 46px; }
+  .about-founder-grid { grid-template-columns: 1fr; gap: 26px; }
+  .about-gallery { max-width: 520px; margin-inline: auto; }
+  .about-photo-two { translate: 0 18px; }
+}
 .lead { font-size: 1.1rem; }
 
 /* ---------- Resources ---------- */
