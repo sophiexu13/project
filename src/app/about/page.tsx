@@ -33,10 +33,10 @@ export default function AboutPage() {
 
           <div className="about-gallery" aria-label="Photos of Sophie Xu">
             <figure className="about-photo about-photo-one">
-              <img src="/sophie-portrait.jpg" alt="Sophie Xu by the ocean at sunset" />
+              <img src="/sophie-city-sunset.jpg" alt="Sophie Xu looking out over the city in warm evening light" />
             </figure>
             <figure className="about-photo about-photo-two">
-              <img src="/sophie-beach.jpg" alt="Sophie Xu at the beach" />
+              <img src="/sophie-city-night.jpg" alt="Sophie Xu overlooking the city at night" />
             </figure>
           </div>
         </div>
